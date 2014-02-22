@@ -11,6 +11,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -85,10 +87,13 @@ $brandpink: #ec0081;
             text-align: center;
             line-height: 50px;
             font-size: 20px;
-            margin: 0 auto;
-            background: #fff;
+            margin: 0;
+            margin-right: 0px;
+            background: #292828;
             display: block;
-            width: 200px;
+            width: 100%;
+            color: #fff;
+            // color: $brandpink;
             height: auto;
         }
 
@@ -150,16 +155,22 @@ $brandpink: #ec0081;
         text-align: center;
     }
     .product-example {
+        text-align: center;
         background: #fff;
         position: relative;
         padding-left: 0px;
         padding-right: 0px;
         height: 100%;
 
+        .btn {
+            margin-top: -130px;
+            background: $brandpink;
+            color: #fff;
+        }
+
     }
 
     .product-colors {
-        border-bottom: 1px dashed #fff;
         height: 100%;
 
 
@@ -175,6 +186,7 @@ $brandpink: #ec0081;
             border-bottom: 1px solid #fff;
 
             .swatch {
+                border: 3px solid #fff;
                 display: inline-block;
                 margin: 12px;
                 height: 50px;
@@ -207,6 +219,13 @@ $brandpink: #ec0081;
             bottom: 20px;
             width: 200px;
             height: 150px;
+            color: #fff;
+
+            h3 {
+                margin-top: -26px;
+                margin-bottom: 4px;
+
+            }
 
             .product-package {
                 margin: 0 auto;
@@ -218,11 +237,13 @@ $brandpink: #ec0081;
 }
 /* Custom page footer */
 .footer {
+    text-align: center;
     background: $brandpink;
     color: #fff;
     height: 50px;
+    text-transform: uppercase;
 
-    p {
+    span {
         line-height: 50px;
         margin-bottom: 0px;
     }
