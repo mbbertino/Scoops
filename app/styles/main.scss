@@ -82,12 +82,17 @@ $brandpink: #ec0081;
         .product-name {
             position: absolute;
             bottom: 0px;
+            left: 0px;
             background: #fff;
             display: inline-block;
             width: 200px;
             height: 100px;
         }
         .product-container {
+            border-left: 1px solid gray;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
             background: #fff;
             display: inline-block;
             height: 100px;
