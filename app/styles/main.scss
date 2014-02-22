@@ -1,0 +1,168 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+$brandpink: #ec0081;
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    position: relative;
+}
+/* Custom page header */
+.main-logo {
+    background: $brandpink;
+    text-align: center;
+
+    .top-logo {   
+        height: 50px;
+        width: auto;
+    }
+}
+
+.header {
+    padding: 10px 0 ;
+    text-align: center;
+
+    .top-links {
+        letter-spacing: 2px;
+        display: inline-block;
+        list-style: none;
+        margin: 0 30px;
+        font-size: 20px;
+
+        a {
+            color: $brandpink;
+        }
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            // padding-bottom: 19px;
+        }
+    }
+}
+
+.product-gallery {
+    height: auto;
+    width: 100%;
+    border: 1px dashed black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding-right: 2px; 
+    background: $brandpink;
+    
+    .product-item{
+        position: relative;
+        background: gray;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        border: 3px solid white;
+
+        .product-name {
+            position: absolute;
+            bottom: 0px;
+            background: #fff;
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+        }
+        .product-container {
+            background: #fff;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.landing-center {
+    position: relative;
+
+    .landing {
+        position: relative;
+        overflow: hidden;
+        height: 700px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: whitesmoke;
+
+        .landing-img {
+            margin: 0 auto;
+        }
+    }
+    .lead {
+        position: absolute;
+        text-align: center;
+        top: 350px;
+        left: 10px;
+        color: #fff;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        // padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        // margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
