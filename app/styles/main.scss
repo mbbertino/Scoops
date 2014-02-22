@@ -12,7 +12,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 /* Space out content a bit */
 body {
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 $brandpink: #ec0081;
@@ -70,7 +70,7 @@ $brandpink: #ec0081;
     padding-right: 2px; 
     
     .product-unit {
-        display: inline-block;        
+        display: inline-block;      
 
         .product-item{
             position: relative;
@@ -105,66 +105,127 @@ $brandpink: #ec0081;
 .product-page{
     height: 500px;
     margin: 0 auto;
+    background: #292828;
+    padding-left: 0px;
+    padding-right: 0px;
     // border: 1px dashed black;
 
     .product-descrip {
-        border: 1px dashed black;
         height: 100%;
 
-        .prod-name {
-            border-bottom: 1px dashed black;
-            position: relative;
-            padding: 20px;
-        }
 
         .prod-description {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            color: #fff;
             margin-top: 25px;
-            height: 375px;
-            border: 1px dashed black;
+            height: 400px;
 
+            .descrip {   
+                padding-bottom: 20px; 
+                border-bottom: 1px dashed #fff;
+            }
+            .circle {
+                margin-top: 12px;
+                height: 15px;
+                width: 15px;
+                border-radius: 15px;
+                background: #fff; 
+
+                &.pull-right {
+                    background: $brandpink;                     
+                }
+            }
+        }
+
+        p {
+            border-bottom: 1px dashed #fff;
         }
     }
 
+    .prod-name {
+        border-bottom: 1px solid #fff;
+        position: relative;
+        padding: 0px;
+        text-align: center;
+    }
     .product-example {
+        background: #fff;
         position: relative;
         padding-left: 0px;
         padding-right: 0px;
-        border: 1px dashed black;
         height: 100%;
 
-
-        .product-containers {
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            height: 100px;
-            border: 1px dashed black;
-        }
     }
 
     .product-colors {
-        border: 1px dashed black;
+        border-bottom: 1px dashed #fff;
         height: 100%;
+
+
+        .swatch-title {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
 
         .swatch-pallette {
             padding-left: 22px;
-            border-bottom: 1px dashed black;
+            border-bottom: 1px solid #fff;
+
             .swatch {
                 display: inline-block;
                 margin: 12px;
                 height: 50px;
                 width: 50px;
-                border: 1px dashed black;
+                border-radius: 25px 0 25px 25px;
 
+                &.nude {
+                    background: #FFEBCD;
+                }
+                &.pink {
+                    background: $brandpink;
+                }
+                &.blue {
+                    background: rgb(107, 107, 226);
+                }
+                &.yellow {
+                    background: rgb(252, 252, 134);
+                }
+                &.black {
+                    background: rgb(68, 68, 68);
+                }
+                &.green {
+                    background: rgb(123, 255, 123);
+                }
+            }
+        }
+        .product-containers {
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            width: 200px;
+            height: 150px;
+
+            .product-package {
+                margin: 0 auto;
+                width: 175px;
+                height: 175px;
             }
         }
     }
 }
 /* Custom page footer */
 .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+    background: $brandpink;
+    color: #fff;
+    height: 50px;
+
+    p {
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
 }
 
 .container-narrow > hr {
@@ -180,7 +241,6 @@ $brandpink: #ec0081;
         overflow: hidden;
         height: 700px;
         text-align: center;
-        margin-bottom: 20px;
         padding-left: 0px;
         padding-right: 0px;
         background: whitesmoke;
